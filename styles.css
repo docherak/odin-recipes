@@ -8,7 +8,9 @@ body {
 }
 
 img {
+  position: relative;
   outline-style: dashed;
+  z-index: 2;
 }
 
 h1 {
@@ -16,8 +18,16 @@ h1 {
   color: white;
 }
 
-a {
+a, a:visited {
   color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+#hiddenlink:hover {
+  color: red;
 }
 
 li {
@@ -60,8 +70,8 @@ li::before {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 2;
 }
-
 
 .bla {
   position: relative;
@@ -69,5 +79,25 @@ li::before {
   width: 200px;
   height: 100px;
   margin-left: 400px;
-  margin-top: -50px
+  margin-top: -50px;
+  z-index: 1;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.bla:hover {
+  z-index: 3;
+}
+
+.flex-cont {
+  display: flex;
+  margin-top: 50px;
+}
+
+.pos1 {
+  flex: 1;
+}
+
+.pos2 {
+  flex: 1;
 }
