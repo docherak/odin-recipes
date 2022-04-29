@@ -7,6 +7,10 @@ body {
   background-size: cover;
 }
 
+img {
+  outline-style: dashed;
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -38,8 +42,32 @@ li::before {
   color: white;
 }
 
-.recipepic { 
+.recipepic {
   width: 30%;
   height: auto;
   opacity: 0.7;
+}
+
+.pic {
+  position: relative;
+  width: auto;
+}
+
+.pic h1 {
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.bla {
+  position: relative;
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  margin-left: 400px;
+  margin-top: -50px
 }
