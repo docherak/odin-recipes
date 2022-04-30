@@ -40,6 +40,16 @@ li::before {
   content: '\007E\002Frecipes\002F';
 }
 
+.ingr li::before {
+  content: '.';
+}
+
+
+
+ol li::before {
+  content: none;
+}
+
 .container {
   position: relative;
 }
@@ -74,7 +84,7 @@ li::before {
   z-index: 2;
 }
 
-.bla {
+.white-box {
   position: relative;
   background-color: white;
   width: 200px;
@@ -95,10 +105,27 @@ li::before {
   margin-top: 50px;
 }
 
+.pos0 {
+  flex: 1;
+}
+
+.pos0 p {
+  text-align: left;
+  padding: 30px 150px;
+  margin-top: 50em;
+}
+
 .pos1 {
   flex: 1;
+  margin-top: 15em;
 }
 
 .pos2 {
   flex: 1;
+}
+
+.pos2 p {
+  text-align: right;
+  padding: 30px 150px;
+  margin-top: -10px;
 }
