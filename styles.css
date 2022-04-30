@@ -44,23 +44,12 @@ li::before {
   content: '.';
 }
 
-
-
 ol li::before {
   content: none;
 }
 
 .container {
   position: relative;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: white;
 }
 
 .recipepic {
@@ -102,30 +91,36 @@ ol li::before {
 
 .flex-cont {
   display: flex;
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10em;
 }
 
 .pos0 {
-  flex: 1;
+  flex: 1 1 250px;
+  margin-top: 65em;
 }
 
 .pos0 p {
   text-align: left;
   padding: 30px 150px;
-  margin-top: 50em;
 }
 
 .pos1 {
-  flex: 1;
-  margin-top: 15em;
+  flex: 2 1 20px;
+  margin-top: 5em;
 }
 
 .pos2 {
-  flex: 1;
+  flex: 1 1 200px;
+  margin-top: -25em;
 }
 
 .pos2 p {
   text-align: right;
   padding: 30px 150px;
-  margin-top: -10px;
 }
